@@ -1,8 +1,7 @@
 {
   lib,
   stdenv,
-  meson,
-  ninja,
+  cmake,
   version,
 }:
 stdenv.mkDerivation {
@@ -11,7 +10,7 @@ stdenv.mkDerivation {
 
   src = ../.;
 
-  nativeBuildInputs = [meson ninja];
+  nativeBuildInputs = [cmake];
 
   meta = {
     homepage = "https://github.com/hyprwm/hyprland-protocols";
